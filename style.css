@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.column-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  min-width: 650px;
+}
+.column {
+  margin: 10px;
+  margin-top: 0px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: calc(100vh - 40px);
+}
+.container.left {
+  margin-top: 25px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/colombia-coffee-plant-with-ripe-and-livia-corona.jpg');
+  text-shadow: 3px 3px 0 #630A10;
+}
+
+.column-header {
+  font-size: 25px;
+  position: relative;
+  background-color: white;
+  top: 8px;
+  color: #630A10;
+  text-shadow: 2px 2px 0 #DBD0C0;
+}
+#big_coffee {
+  user-select: none;
+  font-size: 128px;
+  cursor: pointer;
+}
+
+.counter-container {
+  font-size: 60px;
+  margin: 10px;
+  color: #DBD0C0;
+}
+
+.cps-container {
+  font-size: 40px;
+  color: #F9CF93;
+  text-decoration: underline;
+}
+
+#producer_container {
+  padding: 10px;
+  overflow: auto;
+  border: 2px grey solid;
+  border-radius: 5px;
+  color: #6B4F4F;
+  text-shadow: 1px 1px 0 #DBD0C0;
+}
+
+.producer {
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.producer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.producer-title {
+  font-size: 20px;
+  color: #C36A2D;
+  text-decoration: underline;
+}
+
+.producer button {
+  font-size: 15px;
+  width: 50px;
+}
